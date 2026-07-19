@@ -8,7 +8,7 @@ build_context = import_module("06_retrieve_context").build_context
 
 load_dotenv()
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
 OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-4o-mini")
 
 
